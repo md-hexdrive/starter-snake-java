@@ -41,7 +41,7 @@ public class SnakeTest {
     @Test
     void startTest() throws IOException {
         JsonNode startRequest = OBJECT_MAPPER.readTree("{}");
-        Map<String, String> response = handler.end(startRequest);
+        Map<String, String> response = handler.start(startRequest);
         assertEquals(0, response.size());
 
 
